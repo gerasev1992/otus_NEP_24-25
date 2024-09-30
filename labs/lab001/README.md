@@ -25,4 +25,4 @@ conf t
   exit
  exit
 ```
-![]
+![]test_image_git.png
