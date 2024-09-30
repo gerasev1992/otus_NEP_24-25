@@ -1,3 +1,4 @@
-[Practical_Lab_Network](labs/)
-[Final_Project_Network](final_project/)
+[Lab_Network_Practical](labs/)
+
+[Final_Network_Project](final_project/)
 
