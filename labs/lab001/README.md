@@ -28,4 +28,4 @@ conf t
 
 ###  Задание1:
 
-![test_image_git.png](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab001/README.md?plain=1)
+![image_alt](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab001/README.md?plain=1)
