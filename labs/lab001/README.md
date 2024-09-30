@@ -29,3 +29,5 @@ conf t
 ###  Задание1:
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab001/config/test_image_git.png)
+
+Все файлы изменений приведены [здесь](config/)
