@@ -1,4 +1,4 @@
-**-**[Lab Network Practics](labs/)
+*-* [Lab Network Practics](labs/)
 
-**-**[Final Network Project](final_project/)
+*-* [Final Network Project](final_project/)
 
