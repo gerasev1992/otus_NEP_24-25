@@ -1,2 +1,2 @@
-Practical_Lab_Network
-Final_Project_Network
+[Practical_Lab_Network] (labs/)
+[Final_Project_Network] (final_project/)
