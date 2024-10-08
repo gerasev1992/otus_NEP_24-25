@@ -1,4 +1,4 @@
-```
+
 Current configuration : 2960 bytes
 !
 version 15.0
@@ -177,4 +177,3 @@ line vty 5 15
 ntp server 192.168.3.1
 !
 end
-```
