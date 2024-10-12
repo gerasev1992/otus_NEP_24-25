@@ -13,3 +13,10 @@
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_ping2-3.png)
 
 Отобразите данные протокола spanning-tree.
+
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW1(def).png)
+
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(def).png)
+
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(def).png)
+
