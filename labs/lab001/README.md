@@ -4,4 +4,4 @@
 
 **`Конфигурация устройств` :**   | **[SW1](config/SW1)** | **[SW2](config/SW2)** | **[R1](config/R1)** |
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab001/lab_001.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab001/img/lab_001.png)
