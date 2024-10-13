@@ -7,27 +7,27 @@
 
 **`SW1->SW2 | SW1->SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_ping.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_ping.png)
 
 3. Успешно ли выполняется эхо-запрос от коммутатора S2 на коммутатор S3?
 
 **`SW2->SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_ping2-3.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_ping2-3.png)
 
 #### Отобразите данные протокола spanning-tree. ####
 
 **`SW1`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW1(def).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW1(def).png)
 
 **`SW2`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(def).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW2(def).png)
 
 **`SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(def).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW3(def).png)
 
 **С учетом выходных данных, поступающих с коммутаторов, ответьте на следующие вопросы. **`SW2`****
 
@@ -50,17 +50,17 @@
 
 **`SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(def).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW3(def).png)
 
 Просмотрите изменения протокола spanning-tree
 
 **`SW2`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(cost).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW2(cost).png)
 
 **`SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(cost).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW3(cost).png)
 
 Почему протокол spanning-tree заменяет ранее заблокированный порт на назначенный порт
 и блокирует порт, который был назначенным портом на другом коммутаторе? **`понижение cost ведет к повышение приоритета, тем самым назначается раннее заблокированный порт`**
@@ -69,15 +69,15 @@
 
 **`SW1`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW1(full).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW1(full).png)
 
 **`SW2`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(full).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW2(full).png)
 
 **`SW3`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(full).png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_SW3(full).png)
 
 Какой порт выбран протоколом STP в качестве порта корневого моста на каждом коммутаторе
 некорневого моста? **`SW2 => Fa0/1 | SW3 => Fa0/3`**
