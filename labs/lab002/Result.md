@@ -48,11 +48,17 @@
 
 Определите коммутатор с заблокированным портом.
 
+**`SW3`**
+
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(def).png)
 
 Просмотрите изменения протокола spanning-tree
 
+**`SW2`**
+
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(cost).png)
+
+**`SW3`**
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(cost).png)
 
@@ -61,9 +67,15 @@
 
 Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов.
 
+**`SW1`**
+
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW1(full).png)
 
+**`SW2`**
+
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW2(full).png)
+
+**`SW3`**
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/lab002_SW3(full).png)
 
