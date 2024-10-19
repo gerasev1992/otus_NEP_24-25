@@ -1,4 +1,3 @@
-**Незабыть вписать время аренды**
 version 15.1
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
@@ -19,11 +18,14 @@ ip dhcp pool R1_Client_LAN
  default-router 192.168.1.1
  dns-server 192.168.1.1
  domain-name otus-lab.com
+ lease 2 12 30
+!
 ip dhcp pool R2_Client_LAN
  network 192.168.1.96 255.255.255.240
  default-router 192.168.1.97
  dns-server 192.168.1.97
  domain-name otus-lab.com
+ lease 2 12 30
 !
 !
 !
@@ -78,6 +80,7 @@ interface GigabitEthernet0/1
  speed auto
 !
 interface GigabitEthernet0/1.100
+ description Connected to Client
  encapsulation dot1Q 100
  ip address 192.168.1.1 255.255.255.192
  ipv6 address FE80::1 link-local
@@ -86,10 +89,12 @@ interface GigabitEthernet0/1.100
  ipv6 dhcp server R1-STATELESS
 !
 interface GigabitEthernet0/1.200
+ description Connected to Management
  encapsulation dot1Q 200
  ip address 192.168.1.65 255.255.255.224
 !
 interface GigabitEthernet0/1.1000
+ description Connected to Native
  encapsulation dot1Q 1000 native
  no ip address
 !
