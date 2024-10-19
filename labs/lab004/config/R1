@@ -10,8 +10,8 @@ hostname R1
 enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
 !
 !
-ip dhcp excluded-address 192.168.1.1 192.168.1.2
-ip dhcp excluded-address 192.168.1.97 192.168.1.98
+ip dhcp excluded-address 192.168.1.1 192.168.1.5
+ip dhcp excluded-address 192.168.1.97 192.168.1.101
 !
 ip dhcp pool R1_Client_LAN
  network 192.168.1.0 255.255.255.192
