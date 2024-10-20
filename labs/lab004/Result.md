@@ -89,5 +89,9 @@
 
 **`PC-A->PC-B`**
 
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_tracert_PCA-PCB.png)
+
 **`PC-B->PC-A`**
+
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_tracert_PCB-PCA.png)
  
