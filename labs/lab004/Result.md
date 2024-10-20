@@ -36,7 +36,7 @@
 
 **`R1`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dchp_pool.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcp_binding.png)
 
 **Выполните команду show ip dhcp bindings, чтобы просмотреть установленные назначения адресов DHCP.**
 
