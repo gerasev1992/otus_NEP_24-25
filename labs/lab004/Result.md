@@ -62,6 +62,8 @@
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_tracert_PCB-PCA.png)
 
+## **`DHCPv6`** ##
+
 DHCPv6
 
 
