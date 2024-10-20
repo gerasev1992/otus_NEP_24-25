@@ -78,8 +78,6 @@
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_ipv6_host-id.png)
 
-Введите свои ответы здесь.
-
  #### Проверьте подключение, пропинговав IP-адрес интерфейса G0/0/1 на R2. ####
 
  **`PC-B->R2`**
