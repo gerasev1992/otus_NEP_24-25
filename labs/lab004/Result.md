@@ -42,7 +42,7 @@
 
 **`R1`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dchp_binding.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcp_binding.png)
 
 #### Проверьте подключение, пропинговав IP-адрес интерфейса G0/0/1 на R1. ####
 
