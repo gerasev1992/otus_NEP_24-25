@@ -52,8 +52,10 @@
 
 #### Проверка полной связанности ####
 
+**`PC-A->PC-B`**
 
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_tracert_PCA-PCB.png)
 
+**`PC-B->PC-A`**
 
-
-**`SW1->SW2 | SW1->SW3`**
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_tracert_PCB-PCA.png)
