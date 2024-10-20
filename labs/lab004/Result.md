@@ -36,7 +36,7 @@
 
 **`R1`**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcp_binding.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcp_pool.png)
 
 **Выполните команду show ip dhcp bindings, чтобы просмотреть установленные назначения адресов DHCP.**
 
@@ -49,6 +49,9 @@
 **`PC-A->R1 int Gi0/1.100-Gi0/1.200`**
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_ping_R1_gig0.1_pcA.png)
+
+#### Проверка полной связанности ####
+
 
 
 
