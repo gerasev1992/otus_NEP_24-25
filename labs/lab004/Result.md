@@ -66,14 +66,28 @@
 
 #### Убедитесь, что маршрутизация работает, пропинговав адрес G0/0/1 маршрутизатора R2 с маршрутизатора R1. ####
 
+**`R1->R2`**
+
+ ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_R1-R2.png)
+
 Откуда взялась часть адреса host-id?
 Введите свои ответы здесь.
 
  #### Проверьте подключение, пропинговав IP-адрес интерфейса G0/0/1 на R2. ####
 
+ **`PC-B->R2`**
+
  ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_ping_PCB-R2_gig0.1.png)
 
  #### Проверьте соединение, пропинговав IP-адрес интерфейса G0/0/1 в R1. ####
 
+ **`PC-A->R1`**
+
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_ping_PCA-R1_gig0.1.png)
+
+#### Проверка полной связанности ####
+
+**`PC-A->PC-B`**
+
+**`PC-B->PC-A`**
  
