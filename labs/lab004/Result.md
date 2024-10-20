@@ -70,7 +70,14 @@
 
  ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_dhcpv6_R1-R2.png)
 
-Откуда взялась часть адреса host-id?
+#### Откуда взялась часть адреса host-id? ####
+
+**`host-id PC-B`**
+
+**`Ответ: Формирования host-id в ipv6 использует MAC-ADDRESS устройства (IEEE MAC-48, EUI-48)`**
+
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_ipv6_host-id.png)
+
 Введите свои ответы здесь.
 
  #### Проверьте подключение, пропинговав IP-адрес интерфейса G0/0/1 на R2. ####
