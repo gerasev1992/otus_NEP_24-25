@@ -1,1 +1,134 @@
-
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$/O/k$nS2ijmSupluPL4ioLpa9I.
+!
+no aaa new-model
+clock timezone MSK 3 0
+!
+!
+!         
+!
+!
+!
+no ip domain lookup
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+track 1 ip sla 1 reachability
+ delay down 5 up 3
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.1.1 255.255.255.224
+ ipv6 address FE80::1:4 link-local
+ ipv6 address 2001:DB8:ACAD:1000::1/64
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+ duplex full
+!
+interface Ethernet1/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex full
+ ipv6 address FE80::1:1 link-local
+ ipv6 address 2001:DB8:ACAD:1012::1/64
+!
+interface Ethernet1/1
+ no ip address
+ shutdown
+ duplex full
+!
+interface Ethernet1/2
+ ip address 10.1.3.1 255.255.255.128
+ duplex full
+ ipv6 address FE80::1:2 link-local
+ ipv6 address 2001:DB8:ACAD:1013::1/64
+!
+interface Ethernet1/3
+ ip address 10.1.3.129 255.255.255.128
+ duplex full
+ ipv6 address FE80::1:3 link-local
+ ipv6 address 2001:DB8:ACAD:1014::1/64
+!
+ip forward-protocol nd
+!         
+!
+no ip http server
+no ip http secure-server
+ip route 192.168.3.0 255.255.255.224 Ethernet1/2 10.1.3.3 track 1
+ip route 10.2.3.0 255.255.255.0 Ethernet1/0 10.1.2.2
+ip route 192.168.2.0 255.255.255.224 Ethernet1/0
+ip route 192.168.3.0 255.255.255.224 Ethernet1/3 10.1.3.130 7
+ip route 209.165.200.0 255.255.255.0 Null0
+!
+ip sla 1
+ icmp-echo 10.1.3.3 source-interface Ethernet1/2
+ threshold 1000
+ timeout 1500
+ frequency 3
+ip sla schedule 1 life forever start-time now
+ipv6 route 2001:DB8:ACAD:2000::/64 Ethernet1/0 2001:DB8:ACAD:1012::2
+ipv6 route 2001:DB8:ACAD:3000::/64 2001:DB8:ACAD:1014::3
+ipv6 route 2001:DB8:ACAD:3000::/64 2001:DB8:ACAD:1013::3
+!
+!
+!
+control-plane
+!         
+!
+line con 0
+ exec-timeout 0 0
+ password 7 14141B180F0B
+ logging synchronous
+ login
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ exec-timeout 0 0
+ password 7 14141B180F0B
+ logging synchronous
+ login
+line vty 5 15
+ exec-timeout 0 0
+ password 7 14141B180F0B
+ logging synchronous
+ login
+!
+ntp authentication-key 1 md5 02050D480809 7
+ntp server 10.1.2.2
+!         
+end
