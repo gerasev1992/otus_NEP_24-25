@@ -1,1 +1,123 @@
-
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname R2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$R.As$g/VHxmeaLqf607OMW29a51
+!
+no aaa new-model
+clock timezone MSK 3 0
+!
+!
+!
+!         
+!
+!
+no ip domain lookup
+ip domain name R2.cisco
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!         
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.2.1 255.255.255.224
+ ipv6 address FE80::2:3 link-local
+ ipv6 address 2001:DB8:ACAD:2000::1/64
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+ duplex full
+!
+interface Ethernet1/0
+ ip address 10.1.2.2 255.255.255.0
+ duplex full
+ ipv6 address FE80::2:1 link-local
+ ipv6 address 2001:DB8:ACAD:1012::2/64
+!
+interface Ethernet1/1
+ ip address 10.2.3.2 255.255.255.0
+ duplex full
+ ipv6 address FE80::2:2 link-local
+ ipv6 address 2001:DB8:ACAD:1023::2/64
+!
+interface Ethernet1/2
+ no ip address
+ shutdown
+ duplex full
+!
+interface Ethernet1/3
+ no ip address
+ shutdown
+ duplex full
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 192.168.1.0 255.255.255.224 Ethernet1/0 10.1.2.1
+ip route 192.168.3.0 255.255.255.224 Ethernet1/1 10.2.3.3
+!
+ipv6 route 2001:DB8:ACAD:1000::/64 Ethernet1/0 2001:DB8:ACAD:1012::1
+ipv6 route 2001:DB8:ACAD:3000::/64 Ethernet1/1 2001:DB8:ACAD:1023::3
+!
+!
+!
+control-plane
+!
+banner motd ^C R1 ^C
+!
+line con 0
+ exec-timeout 0 0
+ password 7 14141B180F0B
+ logging synchronous
+ login
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ exec-timeout 0 0
+ password 7 121A0C041104
+ logging synchronous
+ login    
+line vty 5 15
+ exec-timeout 0 0
+ password 7 121A0C041104
+ logging synchronous
+ login
+!
+ntp authentication-key 1 md5 0822455D0A16 7
+ntp master 5
+ntp update-calendar
+!
+end
