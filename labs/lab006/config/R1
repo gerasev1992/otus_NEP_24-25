@@ -41,6 +41,12 @@ multilink bundle-name authenticated
 !         
 track 1 ip sla 1 reachability
  delay down 5 up 3
+!
+track 6 ip sla 6 reachability
+ delay down 5 up 3
+!
+track 666 ip sla 66 reachability
+ delay down 5 up 3
 ! 
 !
 !
@@ -84,7 +90,7 @@ interface Ethernet1/3
  ipv6 address 2001:DB8:ACAD:1014::1/64
 !
 ip forward-protocol nd
-!         
+!
 !
 no ip http server
 no ip http secure-server
@@ -94,20 +100,39 @@ ip route 192.168.2.0 255.255.255.224 Ethernet1/0
 ip route 192.168.3.0 255.255.255.224 Ethernet1/3 10.1.3.130 7
 ip route 209.165.200.0 255.255.255.0 Null0
 !
+ip sla responder
 ip sla 1
  icmp-echo 10.1.3.3 source-interface Ethernet1/2
  threshold 1000
  timeout 1500
  frequency 3
 ip sla schedule 1 life forever start-time now
+ip sla 6  
+ udp-jitter 2001:DB8:ACAD:1013::3 23 source-ip 2001:DB8:ACAD:1013::1 source-port 23
+ threshold 1000
+ timeout 1500
+ frequency 3
+ip sla schedule 6 life forever start-time now
+ip sla 66
+ udp-jitter 2001:DB8:ACAD:1014::3 21 source-ip 2001:DB8:ACAD:1014::1 source-port 21
+ threshold 1000
+ timeout 1500
+ frequency 3
+ip sla schedule 66 life forever start-time now
 ipv6 route 2001:DB8:ACAD:2000::/64 Ethernet1/0 2001:DB8:ACAD:1012::2
+ipv6 route 2001:DB8:ACAD:3000::/64 Ethernet1/2 2001:DB8:ACAD:1013::3
 ipv6 route 2001:DB8:ACAD:3000::/64 2001:DB8:ACAD:1014::3
-ipv6 route 2001:DB8:ACAD:3000::/64 2001:DB8:ACAD:1013::3
+ipv6 local policy route-map IPV6
 !
+route-map IPV6 permit 10
+ set ipv6 next-hop verify-availability 2001:DB8:ACAD:1013::3 10 track 6
+ set ipv6 next-hop verify-availability 2001:DB8:ACAD:1014::3 20 track 666
 !
+!         
 !
 control-plane
-!         
+!
+banner motd ^C R1 ^C
 !
 line con 0
  exec-timeout 0 0
@@ -127,8 +152,8 @@ line vty 5 15
  password 7 14141B180F0B
  logging synchronous
  login
-!
+!         
 ntp authentication-key 1 md5 02050D480809 7
 ntp server 10.1.2.2
-!         
+!
 end
