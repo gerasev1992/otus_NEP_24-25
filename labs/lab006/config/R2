@@ -95,7 +95,7 @@ ipv6 route 2001:DB8:ACAD:3000::/64 Ethernet1/1 2001:DB8:ACAD:1023::3
 !
 control-plane
 !
-banner motd ^C R1 ^C
+banner motd ^C R2 ^C
 !
 line con 0
  exec-timeout 0 0
