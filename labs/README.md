@@ -3,4 +3,4 @@
 3. **[lab_003](lab003/README.md)**
 4. **[lab_004](lab004/README.md)**
 5. **[lab_005](lab005/README.md)**
-6. **[lab_006](lab006/README.md)**
+6. **[lab_006_Investigate IPv4 IPv6 Static Routes](lab006/README.md)**
