@@ -1,1 +1,65 @@
 
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1_Lbtnng
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+ip auth-proxy max-nodata-conns 3
+ip admission max-nodata-conns 3
+!
+!
+ip domain name R1_Lbtnng.org.lan
+!
+interface Loopback0
+ ip address 10.10.100.100 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly
+!
+interface Loopback1
+ ip address 10.0.10.50 255.255.255.255
+ ip nat inside
+ ip virtual-reassembly
+!
+interface FastEthernet0/0
+ ip address 150.10.10.18 255.255.255.248
+ ip nat outside
+ ip virtual-reassembly
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+ip forward-protocol nd
+ip route 0.0.0.0 0.0.0.0 150.10.10.17 FastEthernet0/0
+!
+ip http server
+no ip http secure-server
+ip nat inside source list FROM_NAT interface FastEthernet0/0 overload
+!
+ip access-list standard FROM_NAT
+ permit 10.10.100.0 0.0.0.255
+!
+!
+control-plane
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+end
