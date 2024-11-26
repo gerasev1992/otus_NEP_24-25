@@ -6,6 +6,6 @@
 3. Настроите отслеживание линка через технологию IP SLA.(только для IPv4)
 4. Настройте для офиса Лабытнанги маршрут по-умолчанию.
 
-**`Конфигурация устройств` :**   | **[R1](config/R1_Chokurdakh)** | **[SW2](config/SW2)** |
+**`Конфигурация устройств` :**   | **[R1](config/R1_Chokurdakh)** | **[SW2](config/R1_Labytnangi)** |
 
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs02_scheme/img/scheme_01.jpg)
