@@ -1,1 +1,183 @@
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1_chkrdkh
+!
+boot-start-marker
+boot-end-marker
+!
+no aaa new-model
+ethernet lmi ce
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+ip dhcp excluded-address 10.0.10.1
+ip dhcp excluded-address 10.0.10.17
+!
+ip dhcp pool VL10
+ network 10.0.10.0 255.255.255.240
+ domain-name Chokurdakh.lan
+ dns-server 8.8.8.8 
+ default-router 10.0.10.1 
+ lease 5 5 5
+!
+ip dhcp pool VL20
+ network 10.0.10.16 255.255.255.240
+ default-router 10.0.10.17 
+ dns-server 8.8.8.8 
+ domain-name Chokurdakh.lan
+ lease 5 5 5
+!
+ip domain name R1_chkrdkh.org.lan
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+redundancy
+!
+lldp run
+no cdp run
+!
+track 1 ip sla 1 reachability
+ delay down 5 up 3
+!
+track 2 ip sla 2 reachability
+ delay down 5 up 3
+!
+! 
+interface Loopback0
+ ip address 10.0.10.49 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 150.10.10.2 255.255.255.248
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 150.10.10.10 255.255.255.248
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ ip nat inside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2.10
+ encapsulation dot1Q 10
+ ip address 10.0.10.1 255.255.255.240
+ ip helper-address 10.0.10.1
+ ip nat inside
+ ip virtual-reassembly in
+ ip policy route-map POLICY
+!
+interface GigabitEthernet0/2.20
+ encapsulation dot1Q 20
+ ip address 10.0.10.17 255.255.255.240
+ ip helper-address 10.0.10.17
+ ip nat inside
+ ip virtual-reassembly in
+ ip policy route-map POLICY
+!
+interface GigabitEthernet0/2.111
+ encapsulation dot1Q 111
+ ip address 10.0.10.33 255.255.255.240
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip local policy route-map SLA
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip nat inside source route-map FROM_NAT interface GigabitEthernet0/0 overload
+ip nat inside source route-map FROM_NAT1 interface GigabitEthernet0/1 overload
+ip route 0.0.0.0 0.0.0.0 150.10.10.1 track 1
+ip route 0.0.0.0 0.0.0.0 150.10.10.9 track 2
+!
+ip access-list standard FROM_NAT
+ permit 10.0.10.0 0.0.0.63
+ip access-list standard MNG
+ permit 10.0.10.16 0.0.0.15
+ip access-list standard VL10
+ permit 10.0.10.0 0.0.0.15
+ip access-list standard VL20
+ permit 10.0.10.16 0.0.0.15
+!
+ip access-list extended SLA1
+ permit icmp host 150.10.10.2 host 200.200.200.200
+ip access-list extended SLA2
+ permit icmp host 150.10.10.10 host 200.200.200.200
+!
+ip sla 1
+ icmp-echo 200.200.200.200 source-interface GigabitEthernet0/0
+ threshold 1000
+ timeout 1500
+ frequency 3
+ip sla schedule 1 life forever start-time now
+ip sla 2
+ icmp-echo 200.200.200.200 source-interface GigabitEthernet0/1
+ threshold 1000
+ timeout 1500
+ frequency 3
+ip sla schedule 2 life forever start-time now
+!
+route-map POLICY permit 10
+ match ip address VL10
+ set ip next-hop verify-availability 150.10.10.1 1 track 1
+!
+route-map POLICY permit 20
+ match ip address VL20
+ set ip next-hop verify-availability 150.10.10.9 2 track 2
+!
+route-map FROM_NAT permit 10
+ match ip address FROM_NAT
+ match interface GigabitEthernet0/0
+!
+route-map FROM_NAT1 permit 10
+ match ip address FROM_NAT
+ match interface GigabitEthernet0/1
+!
+route-map SLA permit 10
+ match ip address SLA1
+ set ip next-hop 150.10.10.1
+!
+route-map SLA permit 20
+ match ip address SLA2
+ set ip next-hop 150.10.10.9
+!
+control-plane
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end
 
