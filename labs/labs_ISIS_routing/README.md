@@ -6,5 +6,5 @@
 
 **`Ответы на вопросы:`** **[здесь](Result.md)**
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/img/lab004_scheme.jpg)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_ISIS_routing/2025-01-16_13-08-56.png)
 
