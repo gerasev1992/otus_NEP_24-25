@@ -1,6 +1,10 @@
 !
 hostname R23
 !
+ip cef
+ipv6 unicast-routing
+ipv6 cef
+!
 interface Loopback0
  ip address 10.0.0.23 255.255.255.255
  ip router isis AS520
