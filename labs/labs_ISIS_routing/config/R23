@@ -1,1 +1,29 @@
-
+!
+hostname R23
+!
+interface Loopback0
+ ip address 10.0.0.23 255.255.255.255
+ ip router isis AS520
+ isis circuit-type level-1
+!
+interface Ethernet0/0
+ description R23 -> R25
+ ip address 10.23.25.1 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFFF::1/64
+ ipv6 router isis AS520
+ isis network point-to-point 
+!
+interface Ethernet0/1
+ description R23 -> R24
+ ip address 10.23.24.1 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFF1::1/64
+ ipv6 router isis AS520
+ isis circuit-type level-2-only
+ isis network point-to-point 
+!
+router isis AS520
+ net 49.2222.0000.0000.0023.00
+ metric-style wide
+!
