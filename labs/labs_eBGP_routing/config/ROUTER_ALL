@@ -35,7 +35,146 @@ interface Ethernet0/3
  ip address 10.0.22.1 255.255.255.248
  ip ospf 1 area 0
 
+#R18 
+
+router bgp 2042
+ bgp log-neighbor-changes
+ neighbor 110.110.110.1 remote-as 520
+ neighbor 111.111.111.1 remote-as 520
+
+interface Ethernet0/0
+ description R18 -> R23(AS520)
+ ip address 110.110.110.2 255.255.255.240
+interface Ethernet0/1
+ description R18 -> R26(AS520)-2link
+ ip address 111.111.111.2 255.255.255.240
+interface Ethernet0/2
+ no ip address
+ shutdown
+interface Ethernet0/3
+ no ip address
+ shutdown
+
 #R19
 
+router bgp 101
+ bgp log-neighbor-changes
+ network 101.101.101.0 mask 255.255.255.240
+ neighbor 101.101.101.2 remote-as 1001
+ neighbor 104.104.104.2 remote-as 301
+
+interface Ethernet0/0
+ description R19 -> R15(AS1001)
+ ip address 101.101.101.1 255.255.255.240
+interface Ethernet0/1
+ description R19 -> R21(AS301)
+ ip address 104.104.104.1 255.255.255.252
+interface Ethernet0/2
+ description R19 -> R23(AS520)
+ ip address 100.100.100.1 255.255.255.252
+interface Ethernet0/3
+ no ip address
+ shutdown
+
 #R21
+
+router bgp 301
+ bgp log-neighbor-changes
+ network 102.102.102.0 mask 255.255.255.240
+ network 103.103.103.0 mask 255.255.255.252
+ network 104.104.104.0 mask 255.255.255.252
+ neighbor 102.102.102.2 remote-as 1001
+ neighbor 103.103.103.2 remote-as 520
+ neighbor 104.104.104.1 remote-as 101
+
+interface Ethernet0/0
+ description R21 -> R15(AS1001)
+ ip address 102.102.102.1 255.255.255.240
+interface Ethernet0/1
+ description R21 -> R19(AS101)
+ ip address 104.104.104.2 255.255.255.252
+interface Ethernet0/2
+ description R21 -> R24(AS520)
+ ip address 103.103.103.1 255.255.255.252
+interface Ethernet0/3
+ no ip address
+ shutdown
+
+#R23
+
+router bgp 520
+ bgp log-neighbor-changes
+ network 100.100.100.0 mask 255.255.255.252
+ neighbor 10.0.0.24 remote-as 520
+ neighbor 10.0.0.24 update-source Loopback0
+ neighbor 10.0.0.24 next-hop-self
+ neighbor 10.0.0.25 remote-as 520
+ neighbor 10.0.0.25 update-source Loopback0
+ neighbor 10.0.0.25 next-hop-self
+
+interface Loopback0
+ ip address 10.0.0.23 255.255.255.255
+ ip router isis AS520
+ isis circuit-type level-1
+interface Ethernet0/0
+ description R23 -> R25
+ ip address 10.23.25.1 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFFF::1/64
+ ipv6 router isis AS520
+ isis network point-to-point 
+interface Ethernet0/1
+ description R23 -> R24
+ ip address 10.23.24.1 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFF1::1/64
+ ipv6 router isis AS520
+ isis circuit-type level-2-only
+ isis network point-to-point 
+interface Ethernet0/2
+ description R23 -> R19(AS101)
+ ip address 100.100.100.2 255.255.255.252
+interface Ethernet0/3
+ no ip address
+ shutdown
+
+#R24
+
+router bgp 520
+ bgp log-neighbor-changes
+ network 110.110.110.0 mask 255.255.255.240
+ neighbor 10.0.0.23 remote-as 520
+ neighbor 10.0.0.23 update-source Loopback0
+ neighbor 10.0.0.23 next-hop-self
+ neighbor 10.0.0.26 remote-as 520
+ neighbor 10.0.0.26 update-source Loopback0
+ neighbor 10.0.0.26 next-hop-self
+ neighbor 103.103.103.1 remote-as 301
+ neighbor 110.110.110.2 remote-as 2042
+
+interface Loopback0
+ ip address 10.0.0.24 255.255.255.255
+ ip router isis AS520
+interface Ethernet0/0
+ description R24 -> R18(AS2042)
+ ip address 110.110.110.1 255.255.255.240
+interface Ethernet0/1
+ description R24 -> R23
+ ip address 10.23.24.2 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFF1::2/64
+ ipv6 router isis AS520
+ isis circuit-type level-2-only
+ isis network point-to-point 
+interface Ethernet0/2
+ description R24 -> R21(AS301)
+ ip address 103.103.103.2 255.255.255.252
+interface Ethernet0/3
+ description R24 -> R26
+ ip address 10.24.26.1 255.255.255.252
+ ip router isis AS520
+ ipv6 address 2001:DBB:ACDC:FFF2::1/64
+ ipv6 router isis AS520
+ isis circuit-type level-2-only
+ isis network point-to-point 
 
