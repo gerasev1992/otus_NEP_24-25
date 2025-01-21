@@ -1,1 +1,41 @@
+#R14
+
+router bgp 1001
+ bgp log-neighbor-changes
+ neighbor 101.101.101.1 remote-as 101
+      
+interface Ethernet0/0
+ description R14 -> R19(AS101)
+ ip address 101.101.101.2 255.255.255.240
+interface Ethernet0/1
+ ip address 10.0.12.1 255.255.255.248
+ ip ospf 1 area 0
+interface Ethernet0/2
+ ip address 10.0.19.1 255.255.255.248
+ ip ospf 1 area 101
+interface Ethernet0/3
+ ip address 10.0.13.1 255.255.255.248
+
+#R15
+
+router bgp 1001
+ bgp log-neighbor-changes
+ neighbor 102.102.102.1 remote-as 301
+
+interface Ethernet0/0
+ description R15 -> R21(AS301)
+ ip address 102.102.102.2 255.255.255.240
+interface Ethernet0/1
+ ip address 10.0.23.1 255.255.255.248
+ ip ospf 1 area 0
+interface Ethernet0/2
+ ip address 10.0.20.1 255.255.255.248
+ ip ospf 1 area 102
+interface Ethernet0/3
+ ip address 10.0.22.1 255.255.255.248
+ ip ospf 1 area 0
+
+#R19
+
+#R21
 
