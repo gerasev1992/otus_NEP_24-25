@@ -1,4 +1,4 @@
-##манипуляции с хранилищем сертификатов Firefox
+##манипуляции с хранилищем сертификатов Firefox##
 
 root@cr-cli:~# mv /usr/lib/firefox/libnssckbi.so .
 
