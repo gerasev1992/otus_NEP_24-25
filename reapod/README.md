@@ -48,6 +48,7 @@ export KEYCLOAK_ADMIN_PASSWORD=admin
 /opt/keycloak/keycloak-22.0.1/bin/kc.sh start --optimized
 
 sudo touch /lib/systemd/system/keycloak.service
+
 sudo chmod 664 /lib/systemd/system/keycloak.service
 
 ### ------------------------------------------------------------------------
