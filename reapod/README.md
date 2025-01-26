@@ -8,7 +8,7 @@ root@cr-cli:~# scp user@cr-srv:/etc/ca/ca.crt /usr/local/share/ca-certificates
 
 root@cr-cli:~# update-ca-certificates
 
-# KEYCLOAK
+### KEYCLOAK
 
 unzip keycloak-22.0.1
 
@@ -34,14 +34,13 @@ metrics-enabled=true
 
 https-certificate-file=/opt/keycloak/i.crt
 
-# The file path to a private key in PEM format.
 https-certificate-key-file=/opt/keycloak/i.key
 
 hostname=key.rea25.ru
 
 https-port=443
 
----||||||||||||||||----------
+### ---||||||||||||||||----------
 
 export KEYCLOAK_ADMIN=admin
 export KEYCLOAK_ADMIN_PASSWORD=admin
@@ -51,7 +50,7 @@ export KEYCLOAK_ADMIN_PASSWORD=admin
 sudo touch /lib/systemd/system/keycloak.service
 sudo chmod 664 /lib/systemd/system/keycloak.service
 
-------------------------------------------------------------------------
+### ------------------------------------------------------------------------
 Содержимое файла keycloak.service:
 
 [Unit]
