@@ -55,16 +55,23 @@ sudo chmod 664 /lib/systemd/system/keycloak.service
 Содержимое файла keycloak.service:
 
 [Unit]
+
 Description=Keycloak Server
+
 After=network.target mariadb.service
 
 [Service]
+
 User=keycloak
+
 Group=keycloak
+
 SuccessExitStatus=0 143
+
 ExecStart=/opt/keycloak/keycloak-22.0.1/bin/kc.sh start --optimized
 
 [Install]
+
 WantedBy=multi-user.target
 
 ----------------------------------------------------------------------
