@@ -58,7 +58,7 @@ sudo chmod 664 /lib/systemd/system/keycloak.service
 
 Description=Keycloak Server
 
-After=network.target mariadb.service
+After=network.target postgresql.service
 
 [Service]
 
