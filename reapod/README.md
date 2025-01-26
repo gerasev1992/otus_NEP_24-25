@@ -68,7 +68,9 @@ Group=keycloak
 
 SuccessExitStatus=0 143
 
-ExecStart=/opt/keycloak/keycloak-22.0.1/bin/kc.sh start --optimized
+ExecStart=/opt/keycloak/keycloak-22.0.1/bin/kc.sh start 
+
+"#--optimized"
 
 [Install]
 
