@@ -2,9 +2,13 @@
 
 ###  Задание: Настроить DHCP в офисе Москва. Настроить синхронизацию времени в офисе Москва. Настроить NAT в офисе Москва, C.-Перетбруг и Чокурдах.
 
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/DMVPN/2025-04-13_22-15-10.png)
+
+### NAT
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/Protocols_Default/2025-04-17_16-40-19.png)
 
 
+
+### NTP. DHCP
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/DMVPN/2025-04-13_22-15-10.png)
 
 
