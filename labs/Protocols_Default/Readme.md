@@ -9,7 +9,7 @@
 
 
 ### NTP. DHCP
-![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/DMVPN/2025-04-13_22-15-10.png)
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/Protocols_Default/2025-04-17_16-53-29.png)
 
 
 
