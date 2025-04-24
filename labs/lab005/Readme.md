@@ -43,8 +43,39 @@
 | SPB  | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
 | SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  | -- |
 | SPB  | R18  | GigabitEthernet0/2  | 10.21.42.5   | -- |
-| SPB  | R18  | Loo0  | 10.0.42.5   | -- |
+| SPB  | R18  | Loo0  | 10.0.42.18  | -- |
+| SPB  | R17 | Ethernet0/2  | 10.21.42.2   | -- |
+| SPB  | R17 | Ethernet0/1  |    | -- |
+| SPB  | R17 | Ethernet0/3  |    | -- |
+| SPB  | R17  | Loo0  | 10.0.42.17   | -- |
+| SPB  | R16 | Ethernet0/0 | 10.21.42.9  | -- |
+| SPB  | R16 | Ethernet0/3 | 10.21.42.6  | -- |
+| SPB  | R16 | Ethernet0/1 |  | -- |
+| SPB  | R16 | Ethernet0/2 |  | -- |
+| SPB  | R16  | Loo0  | 10.0.42.16   | -- |
+| SPB  | R32 | Ethernet0/0      |          10.21.42.10 | | -- |
+| SPB  | R32  | Loo0  | 10.0.42.32   | -- |
 
+
+Ethernet0/0                10.21.42.10     YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down  
+
+
+Ethernet0/2                10.21.42.2      YES NVRAM  up                    up      
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback1                  10.20.42.1      YES NVRAM  up        
+
+
+Ethernet0/0                10.21.42.9      YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down    
+Ethernet0/2                unassigned      YES NVRAM  administratively down down    
+Ethernet0/3                10.21.42.6      YES NVRAM  up                    up      
+Loopback1                  10.22.42.1      YES NVRAM  up                    up     
+
+
+Ethernet0/2                10.21.42.2      YES NVRAM  up                    up      
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback1                  10.20.42.1      YES NVRAM  up                    up  
 
 
 GigabitEthernet0/0         110.110.110.2   YES NVRAM  up                    up      
