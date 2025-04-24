@@ -87,9 +87,63 @@
 
 ### Kitor AS101 ###
 
+| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| KTR | R22 | Ethernet0/0      |          101.101.101.1  | -- |
+| KTR  | R22  | Ethernet0/1 | 104.104.104.1   | -- |
+| KTR  | R22  | Ethernet0/2  | 100.100.100.1  | -- |
+
+
 ### Lamas AS301 ###
 
+| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| LMS | R21 | Ethernet0/0      |          102.102.102.1  | -- |
+| LMS | R21  | Ethernet0/1 | 104.104.104.2   | -- |
+| LMS | R21  | Ethernet0/2  | 103.103.103.1  | -- |
+
 ### Threeada AS520 ###
+
+R23>en
+R23#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.23.25.1      YES NVRAM  up                    up      
+Ethernet0/1                10.23.24.1      YES NVRAM  up                    up      
+Ethernet0/2                100.100.100.2   YES NVRAM  up                    up      
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.0.0.23       YES NVRAM  up                    up      
+R23#
+
+
+
+R24#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                110.110.110.1   YES NVRAM  up                    up      
+Ethernet0/1                10.23.24.2      YES NVRAM  up                    up      
+Ethernet0/2                103.103.103.2   YES NVRAM  up                    up      
+Ethernet0/3                10.24.26.1      YES NVRAM  up                    up      
+Loopback0                  10.0.0.24       YES NVRAM  up                    up   
+R24#
+
+
+R25#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.23.25.2      YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down    
+Ethernet0/2                10.24.25.1      YES NVRAM  up                    up      
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.0.0.25       YES NVRAM  up                    up      
+R25#
+
+
+R26#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                unassigned      YES NVRAM  administratively down down    
+Ethernet0/1                111.111.111.1   YES NVRAM  up                    up      
+Ethernet0/2                10.24.25.2      YES NVRAM  up                    up      
+Ethernet0/3                10.24.26.2      YES NVRAM  up                    up      
+Loopback0                  10.0.0.26       YES NVRAM  up                    up      
+R26#
 
 
 			IPv4 sum net
