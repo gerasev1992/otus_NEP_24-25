@@ -45,17 +45,20 @@
 | SPB  | R18  | GigabitEthernet0/3  | 10.21.42.5   | 10.0.0.0/8 |
 | SPB  | R18  | Loo0  | 10.0.42.18  | 10.0.0.0/8 |
 | SPB  | R17 | Ethernet0/2  | 10.21.42.2   | 10.0.0.0/8 |
-| SPB  | R17 | Ethernet0/1.100  |  10.21.100.254  | -- |
-| SPB  | R17 | Ethernet0/1.101  |  10.21.101.254  | -- |
-| SPB  | R17  | Loo0  | 10.0.42.17   | -- |
-| SPB  | R16 | Ethernet0/0 | 10.21.42.9  | -- |
-| SPB  | R16 | Ethernet0/3 | 10.21.42.6  | -- |
-| SPB  | R16 | Ethernet0/1.100 | 10.21.100.254 | -- |
-| SPB  | R16 | Ethernet0/1.102 | 10.21.102.254 | -- |
-| SPB  | R16  | Loo0  | 10.0.42.16   | -- |
-| SPB  | R32 | Ethernet0/0      |          10.21.42.10 | | -- |
-| SPB  | R32  | Loo0  | 10.0.42.32   | -- |
-
+| SPB  | R17 | Ethernet0/1.100  |  10.21.100.254  | 10.0.0.0/8 |
+| SPB  | R17 | Ethernet0/1.101  |  10.21.101.254  | 10.0.0.0/8 |
+| SPB  | R17  | Loo0  | 10.0.42.17   | 10.0.0.0/8 |
+| SPB  | R16 | Ethernet0/0 | 10.21.42.9  | 10.0.0.0/8 |
+| SPB  | R16 | Ethernet0/3 | 10.21.42.6  | 10.0.0.0/8 |
+| SPB  | R16 | Ethernet0/1.100 | 10.21.100.254 | 10.0.0.0/8 |
+| SPB  | R16 | Ethernet0/1.102 | 10.21.102.254 | 10.0.0.0/8 |
+| SPB  | R16  | Loo0  | 10.0.42.16   | 10.0.0.0/8 |
+| SPB  | R32 | Ethernet0/0      |          10.21.42.10 | | 10.0.0.0/8 |
+| SPB  | SW9  | Vlan100  | 10.21.100.2  | 10.0.0.0/8 |
+| SPB  | SW10  | Vlan100  | 10.21.100.3  |10.0.0.0/8 |
+| SPB  | R32  | Loo0  | 10.0.42.32   | 10.0.0.0/8 |
+| SPB  | VPC  | eth0  | DHCP(R16)  | -- |
+| SPB  | VPC8  | eth0  | DHCP(R17)  | -- |
 
 Ethernet0/0                10.21.42.10     YES NVRAM  up                    up      
 Ethernet0/1                unassigned      YES NVRAM  administratively down down  
