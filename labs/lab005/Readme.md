@@ -12,8 +12,6 @@
 | MSK  | R15  | GigabitEthernet0/3  | 10.0.22.1  | -- |
 | MSK  | R15  | Loo0  | 10.14.15.2   | -- |
 | MSK  | R15  | Tunnel1  | 172.16.30.1   | -- |
-
-
 | MSK  | R12  | Ethernet0/0.100              | 10.10.100.254     | -- |
 | MSK  | R12  | Ethernet0/0.101  | 10.10.101.254     | -- |
 | MSK  | R12  | Ethernet0/1  | 10.0.12.2         | -- |
