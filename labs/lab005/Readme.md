@@ -34,6 +34,12 @@
 | MSK  | VPC7  | eth0  | DHCP(R13)  | -- |
 
 
+| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | -- |
+| MSK  | R14  | GigabitEthernet0/1  | 10.0.12.1  | -- |
+| MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | -- |
+
 
 Ethernet0/0.100            
 Ethernet0/0.101            
