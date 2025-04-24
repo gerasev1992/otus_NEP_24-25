@@ -41,17 +41,17 @@
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | SPB  | R18  | GigabitEthernet0/0  | 110.110.110.2  | -- |
 | SPB  | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
-| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  | -- |
-| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.5   | -- |
-| SPB  | R18  | Loo0  | 10.0.42.18  | -- |
-| SPB  | R17 | Ethernet0/2  | 10.21.42.2   | -- |
-| SPB  | R17 | Ethernet0/1  |    | -- |
-| SPB  | R17 | Ethernet0/3  |    | -- |
+| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  | 10.0.0.0/8 |
+| SPB  | R18  | GigabitEthernet0/3  | 10.21.42.5   | 10.0.0.0/8 |
+| SPB  | R18  | Loo0  | 10.0.42.18  | 10.0.0.0/8 |
+| SPB  | R17 | Ethernet0/2  | 10.21.42.2   | 10.0.0.0/8 |
+| SPB  | R17 | Ethernet0/1.100  |    | -- |
+| SPB  | R17 | Ethernet0/3.101  |    | -- |
 | SPB  | R17  | Loo0  | 10.0.42.17   | -- |
 | SPB  | R16 | Ethernet0/0 | 10.21.42.9  | -- |
 | SPB  | R16 | Ethernet0/3 | 10.21.42.6  | -- |
-| SPB  | R16 | Ethernet0/1 |  | -- |
-| SPB  | R16 | Ethernet0/2 |  | -- |
+| SPB  | R16 | Ethernet0/1.100 |  | -- |
+| SPB  | R16 | Ethernet0/2.102 |  | -- |
 | SPB  | R16  | Loo0  | 10.0.42.16   | -- |
 | SPB  | R32 | Ethernet0/0      |          10.21.42.10 | | -- |
 | SPB  | R32  | Loo0  | 10.0.42.32   | -- |
