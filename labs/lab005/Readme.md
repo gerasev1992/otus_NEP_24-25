@@ -17,8 +17,11 @@
 | MSK  | R12  | Ethernet0/1  | 10.0.12.2         | -- |
 | MSK  | R12  | Ethernet0/3   | 10.0.22.2         | -- |
 | MSK  | R12  | Loo0  | 10.0.10.1         | -- |
-
-
+| MSK  | R13 | Ethernet0/0.100              | 10.10.100.254    | -- |
+| MSK  | R13  | Ethernet0/0.101  | 10.10.102.254       | -- |
+| MSK  | R13  | Ethernet0/1  | 10.0.23.2               | -- |
+| MSK  | R13  | Ethernet0/3   | 10.0.13.2               | -- |
+| MSK  | R13  | Loo0  | 10.0.30.1              | -- |
 
 
 Ethernet0/0.100            
