@@ -6,6 +6,12 @@
 | MSK  | R14  | GigabitEthernet0/3  | 10.0.13.1  | -- |
 | MSK  | R14  | Loo0  | 10.14.15.1   | -- |
 | MSK  | R14  | Tunnel1  | 172.16.31.1   | -- |
+| MSK  | R15  | GigabitEthernet0/0  | 102.102.102.2  | -- |
+| MSK  | R15  | GigabitEthernet0/1  | 10.0.23.1  | -- |
+| MSK  | R15  | GigabitEthernet0/2  | 10.0.20.1  | -- |
+| MSK  | R15  | GigabitEthernet0/3  | 10.0.22.1  | -- |
+| MSK  | R15  | Loo0  | 10.14.15.2   | -- |
+| MSK  | R15  | Tunnel1  | 172.16.30.1   | -- |
 
 
 
