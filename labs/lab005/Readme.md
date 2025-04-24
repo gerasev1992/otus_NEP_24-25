@@ -1,7 +1,13 @@
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | -- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| MSK  | R14  | GigabitEthernet0/1  | 10.0.12.1  | -- |
+| MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | -- |
+| MSK  | R14  | GigabitEthernet0/3  | 10.0.13.1  | -- |
+| MSK  | R14  | Loo0  | 10.14.15.1   | -- |
+| MSK  | R14  | Tunnel1  | 172.16.31.1   | -- |
+
+
 
 
 MSK	R14	GigabitEthernet0/0         	101.101.101.2   
