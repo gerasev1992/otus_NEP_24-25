@@ -55,8 +55,8 @@
 | SPB  | R16  | Loo0  | 10.0.42.16   | 10.0.0.0/8 |
 | SPB  | R32 | Ethernet0/0      |          10.21.42.10  | 10.0.0.0/8 |
 | SPB  | R32  | Loo0  | 10.0.42.32   | 10.0.0.0/8 |
-| SPB  | SW9  | Vlan100  | 10.21.100.2  | 10.0.0.0/8 |
-| SPB  | SW10  | Vlan100  | 10.21.100.3  |10.0.0.0/8 |
+| SPB  | SW9  | Vlan100  | 10.21.100.9  | 10.0.0.0/8 |
+| SPB  | SW10  | Vlan100  | 10.21.100.10  |10.0.0.0/8 |
 | SPB  | VPC  | eth0  | DHCP(R16)  | -- |
 | SPB  | VPC8  | eth0  | DHCP(R17)  | -- |
 
@@ -64,18 +64,15 @@
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| CHKR  | R18  | GigabitEthernet0/0  | 110.110.110.2  | -- |
-| CHKR   | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
-| CHKR   | R18  | GigabitEthernet0/2  | 10.21.42.1  | 10.0.0.0/8 |
-| CHKR   | R18  | GigabitEthernet0/3  | 10.21.42.5   | 10.0.0.0/8 |
-| CHKR   | R18  | Loo0  | 10.0.42.18  | 10.0.0.0/8 |
-| CHKR  | R17 | Ethernet0/2  | 10.21.42.2   | 10.0.0.0/8 |
-| CHKR   | R17 | Ethernet0/1.100  |  10.21.100.254  | 10.0.0.0/8 |
-| CHKR  | R17 | Ethernet0/1.101  |  10.21.101.254  | 10.0.0.0/8 |
-| CHKR   | R17  | Loo0  | 10.0.42.17   | 10.0.0.0/8 |
-| CHKR  | SW9  | Vlan100  | 10.21.100.2  | 10.0.0.0/8 |
-| CHKR  | VPC  | eth0  | DHCP(R16)  | -- |
-| CHKR  | VPC8  | eth0  | DHCP(R17)  | -- |
+| CHKR  | R28  | GigabitEthernet0/0  | 110.110.110.2  | -- |
+| CHKR   | R28   | GigabitEthernet0/1  | 111.111.111.2  | -- |
+| CHKR   | R28   | GigabitEthernet0/2.100  | 10.50.100.254  | 10.0.0.0/8 |
+| CHKR   | R28   | GigabitEthernet0/2.101  | 10.50.101.254  | 10.0.0.0/8 |
+| CHKR   | R28   | GigabitEthernet0/2.102 | 10.50.102.254  | 10.0.0.0/8 |
+| CHKR   | R28  | Loo0  | 10.190.10.254  | 10.0.0.0/8 |
+| CHKR  | SW9  | Vlan100  | 10.50.100.29  | 10.0.0.0/8 |
+| CHKR  | VPC30  | eth0  | DHCP(R28.101)  | -- |
+| CHKR  | VPC31 | eth0  | DHCP(R28.101)  | -- |
 
 
 ### Labytnangi ###
