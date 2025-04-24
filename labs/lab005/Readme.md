@@ -26,6 +26,13 @@
 | MSK  | R19  | Loo0  | 10.0.19.2               | -- |
 | MSK  | R20  | Ethernet0/2   | 10.0.20.2              | -- |
 | MSK  | R20  | Loo0  | 10.15.20.1              | -- |
+| MSK  | SW2  | Vlan100  | 10.10.100.2  | -- |
+| MSK  | SW3  | Vlan100  | 10.10.100.3  | -- |
+| MSK  | SW4  | Vlan100  | 10.10.100.4  | -- |
+| MSK  | SW5  | Vlan100  |10.10.100.5  | -- |
+| MSK  | VPC1  | eth0  | DHCP(R12)  | -- |
+| MSK  | VPC7  | eth0  | DHCP(R13)  | -- |
+
 
 
 Ethernet0/0.100            
