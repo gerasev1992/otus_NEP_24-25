@@ -1,4 +1,4 @@
-### MSK ###
+### MSK AS1001 ###
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -35,6 +35,7 @@
 | MSK  | VPC1  | eth0  | DHCP(R12)  | -- |
 | MSK  | VPC7  | eth0  | DHCP(R13)  | -- |
 
+### SPB AS2042 ###
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
