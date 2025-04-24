@@ -5,13 +5,13 @@
 | MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | -- |
 | MSK  | R14  | GigabitEthernet0/3  | 10.0.13.1  | -- |
 | MSK  | R14  | Loo0  | 10.14.15.1   | -- |
-| MSK  | R14  | Tunnel1  | 172.16.31.1   | -- |
+| MSK  | R14  | Tunnel101  | 172.16.31.1   | -- |
 | MSK  | R15  | GigabitEthernet0/0  | 102.102.102.2  | -- |
 | MSK  | R15  | GigabitEthernet0/1  | 10.0.23.1  | -- |
 | MSK  | R15  | GigabitEthernet0/2  | 10.0.20.1  | -- |
 | MSK  | R15  | GigabitEthernet0/3  | 10.0.22.1  | -- |
 | MSK  | R15  | Loo0  | 10.14.15.2   | -- |
-| MSK  | R15  | Tunnel1  | 172.16.30.1   | -- |
+| MSK  | R15  | Tunnel102  | 172.16.30.1   | -- |
 | MSK  | R12  | Ethernet0/0.100              | 10.10.100.254     | -- |
 | MSK  | R12  | Ethernet0/0.101  | 10.10.101.254     | -- |
 | MSK  | R12  | Ethernet0/1  | 10.0.12.2         | -- |
@@ -22,6 +22,10 @@
 | MSK  | R13  | Ethernet0/1  | 10.0.23.2               | -- |
 | MSK  | R13  | Ethernet0/3   | 10.0.13.2               | -- |
 | MSK  | R13  | Loo0  | 10.0.30.1              | -- |
+| MSK  | R19  | Ethernet0/2  | 10.0.19.2        | -- |
+| MSK  | R19  | Loo0  | 10.0.19.2               | -- |
+| MSK  | R20  | Ethernet0/2   | 10.0.20.2              | -- |
+| MSK  | R20  | Loo0  | 10.15.20.1              | -- |
 
 
 Ethernet0/0.100            
