@@ -72,7 +72,7 @@
 | CHKR   | R28   | GigabitEthernet0/2.102 | 10.50.102.254  | 10.0.0.0/8 |
 | CHKR   | R28   | Tunnel102  | 172.16.30.2   | -- |
 | CHKR   | R28  | Loo0  | 10.190.10.254  | 10.0.0.0/8 |
-| CHKR  | SW9  | Vlan100  | 10.50.100.29  | 10.0.0.0/8 |
+| CHKR  | SW29  | Vlan100  | 10.50.100.29  | 10.0.0.0/8 |
 | CHKR  | VPC30  | eth0  | DHCP(R28.101)  | -- |
 | CHKR  | VPC31 | eth0  | DHCP(R28.101)  | -- |
 
@@ -104,46 +104,27 @@
 
 ### Threeada AS520 ###
 
-R23>en
-R23#sh ip int br
-Interface                  IP-Address      OK? Method Status                Protocol
-Ethernet0/0                10.23.25.1      YES NVRAM  up                    up      
-Ethernet0/1                10.23.24.1      YES NVRAM  up                    up      
-Ethernet0/2                100.100.100.2   YES NVRAM  up                    up      
-Ethernet0/3                unassigned      YES NVRAM  administratively down down    
-Loopback0                  10.0.0.23       YES NVRAM  up                    up      
-R23#
+| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| TA | R23 | Ethernet0/0      |          10.23.25.1  | -- |
+| TA | R23  | Ethernet0/1 | 10.23.24.1   | -- |
+| TA | R23  | Ethernet0/2  | 100.100.100.2  | -- |
+| TA | R23  | Loopback0      |  10.0.0.23  | -- |
+| TA | R24 | Ethernet0/0      |          110.110.110.1  | -- |
+| TA | R24  | Ethernet0/1 | 10.23.24.2   | -- |
+| TA | R24  | Ethernet0/2  | 103.103.103.2  | -- |
+| TA | R24  | Ethernet0/3  |  10.24.26.1   | -- |
+| TA | R24  | Loopback0      | 10.0.0.24  | -- |
+| TA | R25 | Ethernet0/0      |          10.23.25.2 | -- |
+| TA | R25 | Ethernet0/2  | 10.24.25.1   | -- |
+| TA | R25  | Loopback0      | 10.0.0.25  | -- |
+| TA | R26  | Ethernet0/1 |   111.111.111.1    | -- |
+| TA | R26 | Ethernet0/2  | 10.24.25.2   | -- |
+| TA | R26 | 10.24.26.2    | 10.24.25.2   | -- |
+| TA | R26  | Loopback0      | 10.0.0.26    | -- |
 
 
 
-R24#sh ip int br
-Interface                  IP-Address      OK? Method Status                Protocol
-Ethernet0/0                110.110.110.1   YES NVRAM  up                    up      
-Ethernet0/1                10.23.24.2      YES NVRAM  up                    up      
-Ethernet0/2                103.103.103.2   YES NVRAM  up                    up      
-Ethernet0/3                10.24.26.1      YES NVRAM  up                    up      
-Loopback0                  10.0.0.24       YES NVRAM  up                    up   
-R24#
-
-
-R25#sh ip int br
-Interface                  IP-Address      OK? Method Status                Protocol
-Ethernet0/0                10.23.25.2      YES NVRAM  up                    up      
-Ethernet0/1                unassigned      YES NVRAM  administratively down down    
-Ethernet0/2                10.24.25.1      YES NVRAM  up                    up      
-Ethernet0/3                unassigned      YES NVRAM  administratively down down    
-Loopback0                  10.0.0.25       YES NVRAM  up                    up      
-R25#
-
-
-R26#sh ip int br
-Interface                  IP-Address      OK? Method Status                Protocol
-Ethernet0/0                unassigned      YES NVRAM  administratively down down    
-Ethernet0/1                111.111.111.1   YES NVRAM  up                    up      
-Ethernet0/2                10.24.25.2      YES NVRAM  up                    up      
-Ethernet0/3                10.24.26.2      YES NVRAM  up                    up      
-Loopback0                  10.0.0.26       YES NVRAM  up                    up      
-R26#
 
 
 			IPv4 sum net
