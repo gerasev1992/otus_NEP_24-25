@@ -60,46 +60,32 @@
 | SPB  | VPC  | eth0  | DHCP(R16)  | -- |
 | SPB  | VPC8  | eth0  | DHCP(R17)  | -- |
 
-Ethernet0/0                10.21.42.10     YES NVRAM  up                    up      
-Ethernet0/1                unassigned      YES NVRAM  administratively down down  
+### Chokurdakh ###
+
+| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| CHKR  | R18  | GigabitEthernet0/0  | 110.110.110.2  | -- |
+| CHKR   | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
+| CHKR   | R18  | GigabitEthernet0/2  | 10.21.42.1  | 10.0.0.0/8 |
+| CHKR   | R18  | GigabitEthernet0/3  | 10.21.42.5   | 10.0.0.0/8 |
+| CHKR   | R18  | Loo0  | 10.0.42.18  | 10.0.0.0/8 |
+| CHKR  | R17 | Ethernet0/2  | 10.21.42.2   | 10.0.0.0/8 |
+| CHKR   | R17 | Ethernet0/1.100  |  10.21.100.254  | 10.0.0.0/8 |
+| CHKR  | R17 | Ethernet0/1.101  |  10.21.101.254  | 10.0.0.0/8 |
+| CHKR   | R17  | Loo0  | 10.0.42.17   | 10.0.0.0/8 |
+| CHKR  | SW9  | Vlan100  | 10.21.100.2  | 10.0.0.0/8 |
+| CHKR  | VPC  | eth0  | DHCP(R16)  | -- |
+| CHKR  | VPC8  | eth0  | DHCP(R17)  | -- |
 
 
-Ethernet0/2                10.21.42.2      YES NVRAM  up                    up      
-Ethernet0/3                unassigned      YES NVRAM  administratively down down    
-Loopback1                  10.20.42.1      YES NVRAM  up        
+### Labytnangi ###
 
+### Kitor AS101 ###
 
-Ethernet0/0                10.21.42.9      YES NVRAM  up                    up      
-Ethernet0/1                unassigned      YES NVRAM  administratively down down    
-Ethernet0/2                unassigned      YES NVRAM  administratively down down    
-Ethernet0/3                10.21.42.6      YES NVRAM  up                    up      
-Loopback1                  10.22.42.1      YES NVRAM  up                    up     
+### Lamas AS301 ###
 
+### Threeada AS520 ###
 
-Ethernet0/2                10.21.42.2      YES NVRAM  up                    up      
-Ethernet0/3                unassigned      YES NVRAM  administratively down down    
-Loopback1                  10.20.42.1      YES NVRAM  up                    up  
-
-
-GigabitEthernet0/0         110.110.110.2   YES NVRAM  up                    up      
-GigabitEthernet0/1         111.111.111.2   YES NVRAM  up                    up      
-GigabitEthernet0/2         10.21.42.1      YES NVRAM  up                    up      
-GigabitEthernet0/3         10.21.42.5      YES NVRAM  up                    up     
-
-
-Ethernet0/0.100            
-Ethernet0/0.101            
-Ethernet0/1                
-Ethernet0/3                
-Loopback0
-
-
-MSK	R14	GigabitEthernet0/0         	101.101.101.2   
-		GigabitEthernet0/1         	10.0.12.1       
-		GigabitEthernet0/2         	10.0.19.1
-		GigabitEthernet0/3         	10.0.13.1       
-		Loopback0   	10.14.15.1      
-		Tunnel1  	172.16.31.1     
 
 			IPv4 sum net
 
