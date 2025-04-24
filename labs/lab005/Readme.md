@@ -1,9 +1,17 @@
-| First Header  | Second Header | First Header  | Second Header |
+| Location  | Device | Interface	IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
+MSK	R14	GigabitEthernet0/0         	101.101.101.2   
+		GigabitEthernet0/1         	10.0.12.1       
+		GigabitEthernet0/2         	10.0.19.1
+		GigabitEthernet0/3         	10.0.13.1       
+		Loopback0   	10.14.15.1      
+		Tunnel1  	172.16.31.1     
+
+			IPv4 sum net
 
 План адресного пространства
 В данной работе используется только IPv4.
