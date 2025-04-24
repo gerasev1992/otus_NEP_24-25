@@ -39,9 +39,18 @@
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | -- |
-| MSK  | R14  | GigabitEthernet0/1  | 10.0.12.1  | -- |
-| MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | -- |
+| SPB  | R18  | GigabitEthernet0/0  | 110.110.110.2  | -- |
+| SPB  | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
+| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  | -- |
+| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.5   | -- |
+| SPB  | R18  | Loo0  | 10.0.42.5   | -- |
+
+
+
+GigabitEthernet0/0         110.110.110.2   YES NVRAM  up                    up      
+GigabitEthernet0/1         111.111.111.2   YES NVRAM  up                    up      
+GigabitEthernet0/2         10.21.42.1      YES NVRAM  up                    up      
+GigabitEthernet0/3         10.21.42.5      YES NVRAM  up                    up     
 
 
 Ethernet0/0.100            
