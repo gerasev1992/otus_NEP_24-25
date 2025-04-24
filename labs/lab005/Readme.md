@@ -64,8 +64,8 @@
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| CHKR  | R28  | GigabitEthernet0/0  | 110.110.110.2  | -- |
-| CHKR   | R28   | GigabitEthernet0/1  | 111.111.111.2  | -- |
+| CHKR  | R28  | GigabitEthernet0/0  | 150.150.10.2  | -- |
+| CHKR   | R28   | GigabitEthernet0/1  | 150.150.10.10  | -- |
 | CHKR   | R28   | GigabitEthernet0/2.100  | 10.50.100.254  | 10.0.0.0/8 |
 | CHKR   | R28   | GigabitEthernet0/2.101  | 10.50.101.254  | 10.0.0.0/8 |
 | CHKR   | R28   | GigabitEthernet0/2.102 | 10.50.102.254  | 10.0.0.0/8 |
