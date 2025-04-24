@@ -1,6 +1,6 @@
 | Location  | Device | Interface	IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | -- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
