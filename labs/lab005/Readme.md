@@ -1,6 +1,10 @@
+Цель:
+В данной самостоятельной работе необходимо распланировать адресное пространство
+Настроить IP на всех активных портах для дальнейшей работы над проектом
+Адресное пространство должно быть задокументировано
 
-https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab005/Full_schema_OTUS.png
 
+![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab005/Full_schema_OTUS.png)
 
 ### MSK AS1001 ###
 
