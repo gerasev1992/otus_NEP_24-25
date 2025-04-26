@@ -1,3 +1,7 @@
+
+https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab005/Full_schema_OTUS.png
+
+
 ### MSK AS1001 ###
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
