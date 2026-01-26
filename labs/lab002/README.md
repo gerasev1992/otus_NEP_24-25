@@ -1,7 +1,5 @@
 # lab_002. STP
 
-[**`Ответы на вопрос`**](Result.md)
-
 ###  Задание: Настройка STP.
 
 - Настроить топологию сети и основные параметры маршрутизаторов.
@@ -18,12 +16,8 @@
 * **[SW3](config/SW3)**
 </details>
 
-
-
-
-
-
 ![](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab002/img/lab002_scheme.png)
 
+[**`Ответы на вопрос`**](Result.md)
 
 
