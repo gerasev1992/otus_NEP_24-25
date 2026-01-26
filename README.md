@@ -18,7 +18,7 @@
 
 **Lab_104. [IS-IS базовая маршрутизация](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/labs_ISIS_routing)**
 
-**Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
+**Lab_105. [EIGRP. Основы](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_EIGRP/README.md)**
 
 **Lab_001. [VLAN и маршрутизация между VLAN](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab001)**
 
