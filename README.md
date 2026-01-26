@@ -4,7 +4,7 @@
 
 **Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
 
-**Lab_003. [Настройка VRRP и EtherChannel](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab003)**
+**Lab_003. [Агрегация соединений и протоколы первого перехода](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab003)**
 
 **Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
 
