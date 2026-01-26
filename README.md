@@ -4,7 +4,7 @@
 
 **Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
 
-**Lab_001. [VLAN и маршрутизация между VLAN](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab003)**
+**Lab_003. [Настройка VRRP и EtherChannel](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab003)**
 
 **Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
 
