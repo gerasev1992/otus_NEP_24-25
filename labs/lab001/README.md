@@ -5,11 +5,9 @@
 <details>
 <summary>Конфигурация устройств</summary>
 
-**[SW1](config/SW1)**
-
-**[SW2](config/SW2)**
-
-**[R1](config/R1)** 
+* **[SW1](config/SW1)**
+* **[SW2](config/SW2)**
+* **[R1](config/R1)** 
 </details>
 
 
