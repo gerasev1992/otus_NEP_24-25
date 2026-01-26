@@ -1,4 +1,4 @@
-# lab_006. Investigate IPv4 IPv6 Static Routes
+# lab_006. Investigate IPv4 IPv6 Static Routes Статическая маршрутизация
 
 ###  Задание: Configure and Investigate IPv4 IPv6 Static Routes.
 
