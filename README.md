@@ -6,7 +6,7 @@
 
 **Lab_003. [Агрегация соединений и протоколы первого перехода](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab003)**
 
-**Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/README.md)**
+**Lab_004. [DHCPv4/v6 и SLAAC](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/README.md)**
 
 **Lab_001. [VLAN и маршрутизация между VLAN](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab001)**
 
