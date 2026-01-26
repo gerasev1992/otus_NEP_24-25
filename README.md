@@ -22,4 +22,4 @@
 
 **Lab_106. [BGP между автономными системами](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/labs_eBGP_routing)**
 
-**Lab_107. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_iBGP-routing_1/README.md)**
+**Lab_107. [Масштабируемость и дизайн iBGP](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_iBGP-routing_1/README.md)**
