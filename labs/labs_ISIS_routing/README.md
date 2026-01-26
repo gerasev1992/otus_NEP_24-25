@@ -1,4 +1,4 @@
-# lab_ISIS-routing. IS-IS
+# lab_103. IS-IS basic routing
 
 ###  Задание: Настроить IS-IS офисе Триада
 
