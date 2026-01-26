@@ -12,7 +12,7 @@
 <details>
 <summary><i>Конфигурация устройств</i></summary>
 
-**[R_ALL](config/ROUTER_ALL)**
+* **[R_ALL](config/ROUTER_ALL)**
   
 </details>
 
