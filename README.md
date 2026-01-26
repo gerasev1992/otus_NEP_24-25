@@ -16,7 +16,7 @@
 
 **Lab_103. [OSPF. Фильтрация](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_OSPF_filtering/README.md)**
 
-**Lab_004. [IS-IS базовая маршрутизация](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/labs_ISIS_routing)**
+**Lab_104. [IS-IS базовая маршрутизация](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/labs_ISIS_routing)**
 
 **Lab_002. [Настройка STP](https://github.com/gerasev1992/otus_NEP_24-25/tree/main/labs/lab002)**
 
