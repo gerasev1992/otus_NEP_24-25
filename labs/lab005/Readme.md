@@ -9,13 +9,13 @@
 
 | Location  | Device | Interface  |  IPv4  | IPv4 sum net |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | -- |
-| MSK  | R14  | GigabitEthernet0/1  | 10.0.12.1  |10.0.0.0/8 |
-| MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | 10.0.0.0/8 |
-| MSK  | R14  | GigabitEthernet0/3  | 10.0.13.1  |10.0.0.0/8 |
+| MSK  | R14  | GigabitEthernet0/0  | 101.101.101.2  | 
+| MSK  | R14  | GigabitEthernet0/1  | 10.0.12.1  |
+| MSK  | R14  | GigabitEthernet0/2  | 10.0.19.1  | 
+| MSK  | R14  | GigabitEthernet0/3  | 10.0.13.1  |
 | MSK  | R14  | Loo0  | 10.14.15.1   | 10.0.0.0/8 |
-| MSK  | R14  | Tunnel101  | 172.16.31.1   | -- |
-| MSK  | R15  | GigabitEthernet0/0  | 102.102.102.2  | -- |
+| MSK  | R14  | Tunnel101  | 172.16.31.1   |
+| MSK  | R15  | GigabitEthernet0/0  | 102.102.102.2  | 
 | MSK  | R15  | GigabitEthernet0/1  | 10.0.23.1  | 10.0.0.0/8|
 | MSK  | R15  | GigabitEthernet0/2  | 10.0.20.1  |10.0.0.0/8 |
 | MSK  | R15  | GigabitEthernet0/3  | 10.0.22.1  | 10.0.0.0/8 |
