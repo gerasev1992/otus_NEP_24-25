@@ -48,49 +48,48 @@
 
 ### SPB AS2042 ###
 
-| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| SPB  | R18  | GigabitEthernet0/0  | 110.110.110.2  | -- |
-| SPB  | R18  | GigabitEthernet0/1  | 111.111.111.2  | -- |
-| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  | 10.0.0.0/8 |
-| SPB  | R18  | GigabitEthernet0/3  | 10.21.42.5   | 10.0.0.0/8 |
-| SPB  | R18  | Loo0  | 10.0.42.18  | 10.0.0.0/8 |
-| SPB  | R18 | Tunnel101  | 172.16.31.2   | -- |
-| SPB  | R17 | Ethernet0/2  | 10.21.42.2   | 10.0.0.0/8 |
-| SPB  | R17 | Ethernet0/1.100  |  10.21.100.254  | 10.0.0.0/8 |
-| SPB  | R17 | Ethernet0/1.101  |  10.21.101.254  | 10.0.0.0/8 |
-| SPB  | R17 | Ethernet0/0.100  |  10.21.100.252  | 10.0.0.0/8 |
-| SPB  | R17 | Ethernet0/0.101  |  10.21.101.253  | 10.0.0.0/8 |
-| SPB  | R17  | Loo0  | 10.0.42.17   | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/0 | 10.21.42.9  | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/3 | 10.21.42.6  | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/1.100 | 10.21.100.253 | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/1.102 | 10.21.102.254 | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/2.100  |  10.21.100.251  | 10.0.0.0/8 |
-| SPB  | R16 | Ethernet0/2.102 |  10.21.101.253  | 10.0.0.0/8 |
-| SPB  | R16  | Loo0  | 10.0.42.16   | 10.0.0.0/8 |
-| SPB  | R32 | Ethernet0/0      |          10.21.42.10  | 10.0.0.0/8 |
-| SPB  | R32  | Loo0  | 10.0.42.32   | 10.0.0.0/8 |
-| SPB  | SW9  | Vlan100  | 10.21.100.9  | 10.0.0.0/8 |
-| SPB  | SW10  | Vlan100  | 10.21.100.10  |10.0.0.0/8 |
-| SPB  | VPC  | eth0  | DHCP(R16)  | -- |
-| SPB  | VPC8  | eth0  | DHCP(R17)  | -- |
+| Location  | Device | Interface  |  IPv4  |
+| ------------- | ------------- | ------------- | ------------- |
+| SPB  | R18  | GigabitEthernet0/0  | 110.110.110.2  | 
+| SPB  | R18  | GigabitEthernet0/1  | 111.111.111.2  | 
+| SPB  | R18  | GigabitEthernet0/2  | 10.21.42.1  |
+| SPB  | R18  | GigabitEthernet0/3  | 10.21.42.5   | 
+| SPB  | R18  | Loo0  | 10.0.42.18  | 
+| SPB  | R18 | Tunnel101  | 172.16.31.2   | 
+| SPB  | R17 | Ethernet0/2  | 10.21.42.2   | 
+| SPB  | R17 | Ethernet0/1.100  |  10.21.100.254  | 
+| SPB  | R17 | Ethernet0/1.101  |  10.21.101.254  | 
+| SPB  | R17 | Ethernet0/0.100  |  10.21.100.252  | 
+| SPB  | R17 | Ethernet0/0.101  |  10.21.101.253  | 
+| SPB  | R17  | Loo0  | 10.0.42.17   | 
+| SPB  | R16 | Ethernet0/0 | 10.21.42.9  | 
+| SPB  | R16 | Ethernet0/3 | 10.21.42.6  | 
+| SPB  | R16 | Ethernet0/1.100 | 10.21.100.253 | 
+| SPB  | R16 | Ethernet0/1.102 | 10.21.102.254 | 
+| SPB  | R16 | Ethernet0/2.100  |  10.21.100.251  |
+| SPB  | R16 | Ethernet0/2.102 |  10.21.101.253  | 
+| SPB  | R16  | Loo0  | 10.0.42.16   |
+| SPB  | R32 | Ethernet0/0      |          10.21.42.10  | 
+| SPB  | R32  | Loo0  | 10.0.42.32   | 
+| SPB  | SW9  | Vlan100  | 10.21.100.9  | 
+| SPB  | SW10  | Vlan100  | 10.21.100.10  |
+| SPB  | VPC  | eth0  | DHCP(R16)  | 
+| SPB  | VPC8  | eth0  | DHCP(R17)  |
 
 ### Chokurdakh ###
 
-| Location  | Device | Interface  |  IPv4  | IPv4 sum net |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| CHKR  | R28  | GigabitEthernet0/0  | 150.150.10.2  | -- |
-| CHKR   | R28   | GigabitEthernet0/1  | 150.150.10.10  | -- |
-| CHKR   | R28   | GigabitEthernet0/2.100  | 10.50.100.254  | 10.0.0.0/8 |
-| CHKR   | R28   | GigabitEthernet0/2.101  | 10.50.101.254  | 10.0.0.0/8 |
-| CHKR   | R28   | GigabitEthernet0/2.102 | 10.50.102.254  | 10.0.0.0/8 |
-| CHKR   | R28   | Tunnel102  | 172.16.30.2   | -- |
-| CHKR   | R28  | Loo0  | 10.190.10.254  | 10.0.0.0/8 |
-| CHKR  | SW29  | Vlan100  | 10.50.100.29  | 10.0.0.0/8 |
-| CHKR  | VPC30  | eth0  | DHCP(R28.101)  | -- |
-| CHKR  | VPC31 | eth0  | DHCP(R28.101)  | -- |
-
+| Location  | Device | Interface  |  IPv4  | 
+| ------------- | ------------- | ------------- | ------------- | 
+| CHKR  | R28  | GigabitEthernet0/0  | 150.150.10.2  | 
+| CHKR   | R28   | GigabitEthernet0/1  | 150.150.10.10  | 
+| CHKR   | R28   | GigabitEthernet0/2.100  | 10.50.100.254  |
+| CHKR   | R28   | GigabitEthernet0/2.101  | 10.50.101.254  | 
+| CHKR   | R28   | GigabitEthernet0/2.102 | 10.50.102.254  | 
+| CHKR   | R28   | Tunnel102  | 172.16.30.2   | 
+| CHKR   | R28  | Loo0  | 10.190.10.254  | 
+| CHKR  | SW29  | Vlan100  | 10.50.100.29  | 
+| CHKR  | VPC30  | eth0  | DHCP(R28.101)  | 
+| CHKR  | VPC31 | eth0  | DHCP(R28.101)  | 
 
 ### Labytnangi ###
 
