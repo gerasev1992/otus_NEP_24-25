@@ -25,3 +25,8 @@
 **Lab_107. [Масштабируемость и дизайн iBGP](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_iBGP-routing_1/README.md)**
 
 **Lab_108. [BGP. Управление анонсами](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/labs_BGP-routing/README.md)**
+
+**Lab_109. [Основные протоколы сети интернет](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/Protocols_Default/Readme.md)**
+
+
+
