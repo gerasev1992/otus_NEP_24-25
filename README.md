@@ -30,4 +30,5 @@
 
 **Lab_110. [Виртуальная частные сети - VPN](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/DMVPN/Readme.md)**
 
+**Lab_111. [IPSec over DmVPN](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/IPSEC/Readme.md)**
 
