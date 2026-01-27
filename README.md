@@ -8,7 +8,7 @@
 
 **Lab_004. [DHCPv4/v6 и SLAAC](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab004/README.md)**
 
-**Lab_006. [Статическая маршрутизация](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab006/README.md)**
+**Lab_005. [Статическая маршрутизация](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab006/README.md)**
 
 **Lab_101. [Архитектура сети](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/lab005/Readme.md)**
 
