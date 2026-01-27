@@ -28,5 +28,6 @@
 
 **Lab_109. [Основные протоколы сети интернет](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/Protocols_Default/Readme.md)**
 
+**Lab_110. [Виртуальная частные сети - VPN](https://github.com/gerasev1992/otus_NEP_24-25/blob/main/labs/DMVPN/Readme.md)**
 
 
